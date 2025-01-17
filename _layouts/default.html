@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body class="layout--splash" dir="ltr">
+    {% include header.html %}
+    
+    <div class="main">
+        <div class="xxx" style="max-width: 1170px;margin: 0 auto;padding: 50px 15px;">
+            {{ content }}
+
+            {% if page.tags and page.dir != "/tags/" %}
+            <div class="tags">
+                <p><a href="/tags/">Tags</a></p>
+                <ul>
+                    {% for tag in page.tags %}
+                    <li><a href="/tags/{{ tag | slugify }}">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include footer.html %}
+</body>
+</html>
