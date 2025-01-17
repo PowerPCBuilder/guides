@@ -31,11 +31,6 @@ def sanitize_filename(filename):
     sanitized = re.sub(r"[^a-z0-9]", "_", filename)
     # Trim leading/trailing underscores
     sanitized = sanitized.strip('_')
-    # If empty or starts/ends with non-alphanumeric, add 'x'
-    if not sanitized or not sanitized[0].isalnum():
-        sanitized = 'x' + sanitized
-    if not sanitized[-1].isalnum():
-        sanitized = sanitized + 'x'
     return sanitized
 
 def download_and_replace_images(content, image_folder):
