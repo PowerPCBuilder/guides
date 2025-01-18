@@ -67,6 +67,25 @@ def download_and_replace_images(content, image_folder):
             print(f"Replaced image URL: {image_url} -> {relative_path}")
 
     return updated_content
+
+def rename_first_image_in_content(markdown_filename, content, images_folder):
+    """Rename the first image found in the Markdown content to match the Markdown filename."""
+    image_pattern = re.compile(r"!\[.*?\]\((.*?)\)")
+    match = image_pattern.search(content)
+    if match:
+        image_path = match.group(1)
+        if image_path.startswith("http"):
+            print(f"Skipping external image: {image_path}")
+        else:
+            full_image_path = os.path.join(images_folder, os.path.basename(image_path)).lstrip('/').replace("\\", "/")
+            if os.path.exists(full_image_path):
+                image_extension = full_image_path.split(".")[1]
+                new_image_name = os.path.join(images_folder, f"{markdown_filename.split(".")[0]}.{image_extension}").lstrip('/').replace("\\", "/")
+                if not os.path.exists(new_image_name):
+                    os.rename(full_image_path, new_image_name)
+                    content = content.replace(image_path, f"/{new_image_name}")
+    return content
+
 def process_md_files_and_collect_tags(folder_path):
     """Process .md files: rename files, format tags, and collect all tags."""
     all_tags = set()
@@ -109,12 +128,24 @@ def process_md_files_and_collect_tags(folder_path):
                         all_tags.update(formatted_tags)
                         print(f"Formatted tags for {new_filename}")
 
+                    # Ensure permalink exists and is correctly formatted
+                    if "permalink" not in front_matter:
+                        front_matter["permalink"] = f"/{posts_dir}/{base_filename}/"
+                    else:
+                        expected_permalink = f"/{posts_dir}/{base_filename}/"
+                        if front_matter["permalink"] != expected_permalink:
+                            front_matter["permalink"] = expected_permalink
+                    print(f"Set permalink for {new_filename}: {front_matter['permalink']}")
+
                     # Reconstruct the file content with updated front matter
                     new_front_matter = yaml.dump(front_matter, default_flow_style=False).strip()
                     content = f"---\n{new_front_matter}\n---\n" + content[front_matter_match.end():]
 
                 # Handle external images
                 content = download_and_replace_images(content, images_dir)
+
+                # Rename first image in the content to match the Markdown filename
+                content = rename_first_image_in_content(new_filename, content, images_dir)
 
                 # Write the updated content back to the file
                 with open(file_path, 'w', encoding='utf-8') as f:
