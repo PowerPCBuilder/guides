@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/get_started_with_your_nas_as_a_personal_cloud/
 tags:
 - NAS
 - Personal cloud
@@ -9,6 +10,7 @@ tags:
 - Data synchronization
 title: Get Started with Your NAS as a Personal Cloud
 ---
+![alt text](/assets/images/nas/get_started_with_your_nas_as_a_personal_cloud.png)
 # Get Started with Your NAS as a Personal Cloud
 
 Using a NAS (Network Attached Storage) as a personal cloud offers control over your data without the recurring costs of online cloud services. This guide explores the advantages of using a NAS for personal storage and how to maximize its features.
@@ -42,7 +44,7 @@ A NAS personal cloud syncs files across devices, enabling seamless file access a
 
 ### Smartphone and Tablet
 
-![Smartphone and tablet](/assets/images/nas/7b91f5f2d5f528c723adb1e6ddae840d.jpeg)
+![Smartphone and tablet](/assets/images/nas/get_started_with_your_nas_as_a_personal_cloud.jpeg)
 
 **Apps for Photos and Videos**  
 Download brand-specific apps like **My Cloud Home** or **DSM Mobile** to access NAS files anywhere. Key features include:

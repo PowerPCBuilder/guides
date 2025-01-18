@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/advice_on_streaming_media_with_your_nas/
 tags:
 - NAS
 - Media streaming
@@ -10,7 +11,7 @@ tags:
 - Apple TV
 title: Advice on Streaming Media with Your NAS
 ---
-![](/assets/images/nas/ccbe158cf308caa9be89142b8a670b54.jpeg)
+![](/assets/images/nas/advice_on_streaming_media_with_your_nas.jpeg)
 
 # Advice on Streaming Media with Your NAS
 

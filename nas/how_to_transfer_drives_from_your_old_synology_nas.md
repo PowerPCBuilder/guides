@@ -1,5 +1,6 @@
 ---
 category: help for installation
+permalink: /nas/how_to_transfer_drives_from_your_old_synology_nas/
 tags:
 - Synology NAS
 - Hard drive transfer
@@ -9,7 +10,7 @@ tags:
 - Troubleshooting
 title: How to Transfer Drives from Your Old Synology NAS?
 ---
-![](/assets/images/nas/a8365f301d7410d8449a01e97d3a777c.jpeg)
+![](/assets/images/nas/how_to_transfer_drives_from_your_old_synology_nas.jpeg)
 
 # How to Transfer Drives from Your Old Synology NAS?
 

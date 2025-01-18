@@ -1,5 +1,6 @@
 ---
 category: help for installation
+permalink: /nas/how_to_transfer_data_to_your_synology_nas_from_windows/
 tags:
 - Synology NAS
 - Windows file transfer
@@ -8,7 +9,7 @@ tags:
 - Data management
 title: How to Transfer Data to Your Synology NAS from Windows?
 ---
-![](/assets/images/nas/56a29a76a9df5fdc61ff35ebdcc9d460.jpeg)
+![](/assets/images/nas/how_to_transfer_data_to_your_synology_nas_from_windows.jpeg)
 
 # How to Transfer Data to Your Synology NAS from Windows?
 

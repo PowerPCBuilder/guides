@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/choosing_the_right_nas_for_your_needs/
 tags:
 - NAS
 - Storage capacity
@@ -9,6 +10,7 @@ tags:
 - Scalability
 title: Choosing the Right NAS for Your Needs
 ---
+![alt text](/assets/images/nas/choosing_the_right_nas_for_your_needs.png)
 # **Choosing the Right NAS for Your Needs**
 
 Selecting the ideal NAS (Network Attached Storage) device involves evaluating your specific requirements, budget, and potential for future expansion. This guide outlines the critical factors to consider, helping you make an informed decision.

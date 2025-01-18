@@ -1,5 +1,6 @@
 ---
 category: help for troubleshooting
+permalink: /nas/how_to_reset_your_synology_nas/
 tags:
 - Synology NAS
 - Reset guide
@@ -9,7 +10,7 @@ tags:
 - NAS setup
 title: How to Reset Your Synology NAS?
 ---
-![](/assets/images/nas/19d5211f60fd16c86b9d2833b62ba550.jpeg)
+![alt text](/assets/images/nas/how_to_reset_your_synology_nas.png)
 
 # How to Reset Your Synology NAS?
 

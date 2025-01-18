@@ -1,5 +1,6 @@
 ---
 category: help for installation
+permalink: /nas/how_to_set_up_synology_drive_server/
 tags:
 - Synology Drive Server
 - NAS setup
@@ -8,7 +9,7 @@ tags:
 - Synology DSM
 title: How to Set Up Synology Drive Server?
 ---
-![](/assets/images/nas/290bc8b3567babd976476979db118973.jpeg)
+![](/assets/images/nas/how_to_set_up_synology_drive_server.jpeg)
 
 # How to Set Up Synology Drive Server?
 

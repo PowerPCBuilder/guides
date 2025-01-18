@@ -1,5 +1,6 @@
 ---
 category: help for troubleshooting
+permalink: /nas/how_to_adjust_the_raid_setup_of_your_synology_nas/
 tags:
 - Synology NAS
 - RAID setup
@@ -8,7 +9,7 @@ tags:
 - NAS configuration
 title: How to Change the RAID Setup on Your Synology NAS?
 ---
-![](/assets/images/nas/beb975c0e16fd424ce9a06bf2a037532.jpeg)
+![alt text](/assets/images/nas/how_to_adjust_the_raid_setup_of_your_synology_nas.png)
 
 # How to Adjust the RAID Setup of Your Synology NAS?
 

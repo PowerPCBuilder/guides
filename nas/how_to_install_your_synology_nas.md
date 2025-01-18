@@ -1,5 +1,6 @@
 ---
 category: help for installation
+permalink: /nas/how_to_install_your_synology_nas/
 tags:
 - Synology NAS
 - NAS setup
@@ -9,7 +10,7 @@ tags:
 - Troubleshooting
 title: How to Install Your Synology NAS?
 ---
-![](/assets/images/nas/19d5211f60fd16c86b9d2833b62ba550.jpeg)
+![](/assets/images/nas/how_to_install_your_synology_nas.png)
 
 # How to Install Your Synology NAS?
 

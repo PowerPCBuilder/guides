@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/how_to_create_a_shared_folder_on_your_synology_nas/
 tags:
 - Synology NAS
 - Shared folder
@@ -8,7 +9,7 @@ tags:
 - User permissions
 title: How to Create a Shared Folder on Your Synology NAS?
 ---
-![](/assets/images/nas/fa65ec1c3a46b3f43827ad07287bbeff.jpeg)
+![](/assets/images/nas/how_to_create_a_shared_folder_on_your_synology_nas.jpeg)
 
 # How to Create a Shared Folder on Your Synology NAS?
 

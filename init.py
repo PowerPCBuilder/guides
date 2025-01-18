@@ -107,15 +107,10 @@ def process_md_files_and_collect_tags(folder_path):
                 base_filename = sanitize_filename(title)
                 new_filename = f"{base_filename}.md"
                 new_file_path = os.path.join(root, new_filename)
-                counter = 1
-                while os.path.exists(new_file_path):
-                    new_filename = f"{base_filename}_{counter}.md"
-                    new_file_path = os.path.join(root, new_filename)
-                    counter += 1
-
-                # Rename the file
-                os.rename(file_path, new_file_path)
-                print(f"Renamed: {file} -> {new_filename}")
+                if not os.path.exists(new_file_path):
+                    # Rename the file
+                    os.rename(file_path, new_file_path)
+                    print(f"Renamed: {file} -> {new_filename}")
                 file_path = new_file_path  # Update file_path for further processing
 
                 # Format tags

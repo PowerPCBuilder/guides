@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/how_to_make_backups_of_your_files_on_a_nas/
 tags:
 - NAS
 - Data backup
@@ -9,7 +10,7 @@ tags:
 - Mobile backup
 title: Advice on Backups
 ---
-![](/assets/images/nas/9e91479636055b3f90c74f57ed4ab612.jpeg)
+![](/assets/images/nas/how_to_make_backups_of_your_files_on_a_nas.jpeg)
 
 # How to Make Backups of Your Files on a NAS?
 

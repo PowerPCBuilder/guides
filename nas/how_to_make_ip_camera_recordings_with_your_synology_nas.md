@@ -1,5 +1,6 @@
 ---
 category: help for installation
+permalink: /nas/how_to_make_ip_camera_recordings_with_your_synology_nas/
 tags:
 - Synology NAS
 - IP camera
@@ -9,7 +10,7 @@ tags:
 - Troubleshooting
 title: How to Make IP Camera Recordings with Your Synology NAS?
 ---
-![](/assets/images/nas/85ea79a79c42fd94608ddf4bd3b905cb.jpeg)
+![](/assets/images/nas/how_to_make_ip_camera_recordings_with_your_synology_nas.jpeg)
 
 # How to Make IP Camera Recordings with Your Synology NAS?
 

@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/what_is_a_nas_and_why_use_a_nas/
 tags:
 - NAS
 - Network storage
@@ -9,7 +10,7 @@ tags:
 - Personal cloud
 title: What is a NAS and Why Use a NAS?
 ---
-![What is a NAS and Why Use a NAS?](/assets/images/nas/nas1.png)
+![What is a NAS and Why Use a NAS?](/assets/images/nas/what_is_a_nas_and_why_use_a_nas.png)
 # **What is a NAS and Why Use a NAS?**
 
 In today’s digital era, managing data efficiently and securely has become essential. Both individuals and businesses require scalable and reliable solutions for storing, accessing, and protecting their data. A Network Attached Storage (NAS) system offers an ideal solution for these needs. This article explores what a NAS is and why it’s a valuable addition to your data management toolkit.

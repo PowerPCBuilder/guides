@@ -1,5 +1,6 @@
 ---
 category: help for use
+permalink: /nas/how_to_get_external_access_to_your_synology_nas_via_quickconnect/
 tags:
 - Synology NAS
 - External access
@@ -9,7 +10,7 @@ tags:
 - Secure NAS
 title: How to Make Your Synology NAS Externally Accessible?
 ---
-![](/assets/images/nas/beb975c0e16fd424ce9a06bf2a037532.jpeg)
+![alt text](/assets/images/nas/how_to_get_external_access_to_your_synology_nas_via_quickconnect.png)
 
 # How to Get External Access to Your Synology NAS via QuickConnect?
 
