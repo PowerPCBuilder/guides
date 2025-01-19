@@ -1,11 +1,24 @@
 <div class="navbar">
-    <div class="logo"><a href="https://www.powerpcbuilder.com/">PowerPCBuilder</a></div>
-    <ul>
-        <!-- <li><a href="#">CPU</a></li>
-        <li><a href="#">Motherboard</a></li>
-        <li><a href="#">Memory</a></li>
-        <li><a href="#">Storage</a></li>
-        <li><a href="#">Video Card</a></li> -->
-        <li><a href="https://www.powerpcbuilder.com/nas">NAS</a></li>
+    <div class="logo">
+      <a href="https://www.powerpcbuilder.com/">PowerPCBuilder</a>
+    </div>
+    <button class="hamburger" id="hamburger-menu">&#9776;</button>
+    <ul id="navbar-menu">
+      <li><a href="#">CPU</a></li>
+      <li><a href="#">Motherboard</a></li>
+      <li><a href="#">Memory</a></li>
+      <li><a href="#">Storage</a></li>
+      <li><a href="#">Video Card</a></li>
+      <li><a href="https://www.powerpcbuilder.com/nas">NAS</a></li>
     </ul>
-</div>
+  </div>
+
+  <script>
+    // JavaScript to toggle the menu visibility on mobile
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navbarMenu = document.getElementById('navbar-menu');
+
+    hamburgerMenu.addEventListener('click', () => {
+      navbarMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
+    });
+  </script>

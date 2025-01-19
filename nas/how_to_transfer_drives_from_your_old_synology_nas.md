@@ -9,6 +9,7 @@ tags:
 - NAS setup
 - Troubleshooting
 title: How to Transfer Drives from Your Old Synology NAS?
+description: To transfer drives between Synology NAS devices, ensure compatibility, back up settings and data, then carefully move drives in the correct order. Use Synology's tools like DSM and Hyper Backup for a smooth migration. Complete the setup by restoring settings and verifying functionality for efficient data management.
 ---
 ![](/assets/images/nas/how_to_transfer_drives_from_your_old_synology_nas.jpeg)
 

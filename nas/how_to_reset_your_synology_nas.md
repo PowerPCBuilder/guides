@@ -9,6 +9,7 @@ tags:
 - Hard reset
 - NAS setup
 title: How to Reset Your Synology NAS?
+description: Resetting a Synology NAS can resolve issues like forgotten passwords or restore factory settings. Use a soft reset to restore user and network settings, or a hard reset to reinstall the operating system without deleting data. Always back up important files and follow setup instructions post-reset for a seamless experience.
 ---
 ![alt text](/assets/images/nas/how_to_reset_your_synology_nas.png)
 

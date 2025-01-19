@@ -8,6 +8,7 @@ tags:
 - NAS setup
 - Data management
 title: How to Transfer Data to Your Synology NAS from Windows?
+description: Connect your Synology NAS to a Windows PC for seamless file transfers by; 1) Preparing your PC and NAS, 2) Activating SMB in NAS settings, and 3) Mapping the NAS as a network drive in File Explorer. This integration simplifies moving and managing files between devices efficiently.
 ---
 ![](/assets/images/nas/how_to_transfer_data_to_your_synology_nas_from_windows.jpeg)
 

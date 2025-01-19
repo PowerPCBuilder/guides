@@ -8,6 +8,7 @@ tags:
 - File synchronization
 - Synology DSM
 title: How to Set Up Synology Drive Server?
+description: Synology Drive Server enables private cloud file synchronization across devices, offering control over permissions and file sharing. Setup involves updating DSM, installing the server, enabling synchronization, configuring access, and using the Drive Client on your PC or laptop. It's ideal for efficient, secure, and customizable file management for personal or team use.
 ---
 ![](/assets/images/nas/how_to_set_up_synology_drive_server.jpeg)
 

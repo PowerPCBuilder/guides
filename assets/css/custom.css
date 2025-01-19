@@ -4,55 +4,94 @@ body {
     background-color: #fffdf9;
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
-.navbar {
-    display: flex;
-    align-items: center;
-    background: #fffdf9;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ece9df;
-}
-.navbar .logo {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #E57300;
-    /* background-color: #FFE0C3; */
-    padding: 5px 10px;
-    /* border-radius: 15%; */
-    margin-right: 20px;
-}
-.navbar .logo a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-}
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.navbar ul li {
-    margin: 0 15px;
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-.navbar ul li a:hover {
-    color: #0077b6;
-}
-
-.navbar ul li.active a {
-    background-color: #f5f3eb;
-    padding: 10px 15px;
-}
-
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Separate logo and menu/hamburger */
+        background: #fffdf9;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ece9df;
+        flex-wrap: wrap; /* Allow the menu to naturally wrap below */
+      }
+  
+      .navbar .logo {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        color: #E57300;
+      }
+  
+      .navbar .logo a {
+        text-decoration: none;
+        color: inherit;
+      }
+  
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        flex-basis: auto; /* Prevent shrinking on desktop */
+        flex-direction: row; /* Horizontal menu for desktop */
+        justify-content: flex-start;
+      }
+  
+      .navbar ul.hidden {
+        display: none; /* Hide the menu on mobile toggle */
+      }
+  
+      .navbar ul li {
+        margin: 0;
+      }
+  
+      .navbar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+  
+      .navbar ul li a:hover {
+        color: #0077b6;
+      }
+  
+      /* Active state */
+      .navbar ul li.active a {
+        background-color: #f5f3eb;
+        padding: 8px 12px;
+        border-radius: 4px;
+      }
+  
+      /* Hamburger menu */
+      .hamburger {
+        display: none; /* Hidden by default */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #333;
+      }
+  
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .hamburger {
+          display: block; /* Show hamburger on mobile */
+        }
+  
+        .navbar ul {
+          flex-basis: 100%; /* Full width for the menu */
+          flex-direction: column; /* Stack items vertically */
+          gap: 10px;
+        }
+  
+        .navbar ul.hidden {
+          display: none !important; /* Hide menu on mobile until toggled */
+        }
+      }
 .footer {
     margin-top: auto;
     text-align: center;

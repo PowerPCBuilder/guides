@@ -9,6 +9,7 @@ tags:
 - Camera recordings
 - Troubleshooting
 title: How to Make IP Camera Recordings with Your Synology NAS?
+description: Connect an IP camera to your Synology NAS using Surveillance Station for secure, centralized video storage. Install Surveillance Station, connect your camera, configure settings, and verify the connection. Customize video, recording, and schedules for efficient surveillance. Troubleshoot connection issues via firmware updates, firewall settings, and network compatibility checks.
 ---
 ![](/assets/images/nas/how_to_make_ip_camera_recordings_with_your_synology_nas.jpeg)
 
