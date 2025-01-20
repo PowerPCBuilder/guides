@@ -5,8 +5,9 @@ permalink: /nas/
 ---
 <style>
     .section {
-        padding: 8rem 0 7rem;
+        padding: 3rem 0 7rem;
         text-align: center;
+        position: relative;
     }
 
     .section-heading,
@@ -66,7 +67,7 @@ permalink: /nas/
         margin-bottom: 10px;
     }
 
-    .post-tags a {
+    .post-tags a, .post-tags span {
         display: inline-block;
         padding: 5px 10px;
         margin-right: 5px;
@@ -130,25 +131,40 @@ permalink: /nas/
     background-color: #E6F0FF; /* Pale Sky Blue */
 }
 .progress-bar {
-            display: flex;
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            text-align: center;
-            font-size: 14px;
-        }
-        .progress-step {
-            flex: 1;
-            padding: 10px;
-            font-size: 2rem;
-            position: relative;
-        }
-        .progress-step span {
-            display: block;
-            font-size: 1.2rem;
-            margin-top: 5px;
-        }
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.progress-step {
+    flex: 1;
+    padding: 10px;
+    font-size: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.progress-step span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.section.get-help {
+    padding-bottom: 0;
+}
+
 </style>
 
 <div class="section get-help">
@@ -156,400 +172,243 @@ permalink: /nas/
         <h3 class="section-heading">Your Ultimate NAS Resource Hub</h3>
         <p class="section-description">Everything You Need to Know About Network Attached Storage</p>
     </div>
-    <div class="progress-bar">
-        <div class="progress-step bg1">
-            Awareness
-            <span>Gain knowledge about the product</span>
-        </div>
-        <div class="progress-step bg2">
-            Evaluation
-            <span>Decide to purchase the product</span>
-        </div>
-        <div class="progress-step bg3">
-            Shopping Decision
-            <span>Identify where to buy the product</span>
-        </div>
-        <div class="progress-step bg4">
-            Purchase
-            <span>Complete the purchase process</span>
-        </div>
-        <div class="progress-step bg5">
-            Setup and Installation
-            <span>Prepare the product for use</span>
-        </div>
-        <div class="progress-step bg6">
-            Utilization
-            <span>Start using the product</span>
-        </div>
-        <div class="progress-step bg7">
-            Support and Maintenance
-            <span>Address issues and perform maintenance</span>
-        </div>
+</div>
+
+<!-- Move progress-bar outside the section -->
+<div class="progress-bar">
+    <div class="progress-step bg1">
+        Awareness
+        <span>Gain knowledge about the product</span>
+    </div>
+    <div class="progress-step bg2">
+        Evaluation
+        <span>Decide to purchase the product</span>
+    </div>
+    <div class="progress-step bg3">
+        Shopping Decision
+        <span>Identify where to buy the product</span>
+    </div>
+    <div class="progress-step bg4">
+        Purchase
+        <span>Complete the purchase process</span>
+    </div>
+    <div class="progress-step bg5">
+        Setup and Installation
+        <span>Prepare the product for use</span>
+    </div>
+    <div class="progress-step bg6">
+        Utilization
+        <span>Start using the product</span>
+    </div>
+    <div class="progress-step bg7">
+        Support and Maintenance
+        <span>Address issues and perform maintenance</span>
     </div>
 </div>
+
 <div class="section bg1">
-    <div class="container">
+    <div class="container" id="awareness">
         <h3 class="section-heading">Awareness</h3>
         <p class="section-description">
             Gain knowledge about the product, its features, benefits, and how it can address a specific need or problem.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="section bg2">
-    <div class="container">
+    <div class="container" id="evaluation">
         <h3 class="section-heading">Evaluation</h3>
         <p class="section-description">
             Decide to purchase the product and focus on choosing the right model or variation that best fits your
             requirements.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="section bg3">
-    <div class="container">
+    <div class="container" id="decision">
         <h3 class="section-heading">Shopping Decision</h3>
         <p class="section-description">
             Identify where to buy the product, considering factors like price, availability, reviews, and seller
             reputation.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="section bg4">
-    <div class="container">
+    <div class="container" id="purchase">
         <h3 class="section-heading">Purchase</h3>
         <p class="section-description">
             Complete the purchase process and confirm the order.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="section bg5">
-    <div class="container">
+    <div class="container" id="setup">
         <h3 class="section-heading">Setup and Installation</h3>
         <p class="section-description">
             Prepare the product for use, including any assembly, installation, or configuration required.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="section bg6">
-    <div class="container">
+    <div class="container" id="utilization">
         <h3 class="section-heading">Utilization</h3>
         <p class="section-description">
             Start using the product, exploring its functionalities and integrating it into your daily routine.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
 
 <div class="section bg7">
-    <div class="container">
+    <div class="container" id="support">
         <h3 class="section-heading">Support and Maintenance</h3>
         <p class="section-description">
             Address any issues, perform troubleshooting, and carry out necessary maintenance to keep the product in
             optimal condition.
         </p>
         <div class="row">
-            <!-- First Post -->
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">What is a NAS and Why Use a NAS?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        A NAS (Network Attached Storage) is a centralized, network-connected storage solution for managing, accessing, and securing data. It offers features like scalability, data protection, remote access, and media streaming. NAS systems are cost-effective alternatives to cloud storage, suitable for personal or business use, enhancing collaboration, backups, and private cloud capabilities.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
-            <div class="post-card row">
-                <a href="#" class="img">
-                    <img src="image.png" alt="NAS Placeholder">
-                </a>
-                <div class="right-section column">
-                    <h3 class="post-title">NAS vs. Cloud Storage: Which is Right for You?</h3>
-                    <div class="post-tags">
-                        <a href="#">新人首贴请多指教</a>
-                        <a href="#">自组NAS</a>
-                        <a href="#">数码配件节</a>
-                        <a href="#">数码</a>
-                    </div>
-                    <p>
-                        NAS and cloud storage cater to different needs: NAS offers local control, cost efficiency, and privacy but requires setup and hardware upgrades. Cloud storage provides ease of use, global access, and scalability at recurring costs, with privacy risks. Choose NAS for privacy and savings; opt for cloud storage for convenience and flexibility.
-                    </p>
-                    <!-- <div class="post-meta">
-                        <span>公子小柒</span> &bull; 2024-12-15 &bull; ❤ 30 &nbsp;&nbsp; 💬 134
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 </div>
+
+<script>
+// Add this before the existing script content
+document.querySelectorAll('.progress-step').forEach((step, index) => {
+    step.addEventListener('click', () => {
+        const sections = document.querySelectorAll('.section .container[id]');
+        if (sections[index]) {
+            sections[index].parentNode.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+    step.style.cursor = 'pointer';
+});
+
+// Add scroll spy functionality
+function updateActiveStep() {
+    const sections = document.querySelectorAll('.section .container[id]');
+    const steps = document.querySelectorAll('.progress-step');
+    let firstVisibleSection = null;
+    let currentIndex = 0;
+
+    // Find first visible section
+    for (const section of sections) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            firstVisibleSection = section; // Found the first fully visible section
+            break;
+        } else if (rect.top < window.innerHeight && rect.bottom > 0) {
+            firstVisibleSection = section; // Found the first partially visible section
+            break;
+        }
+    }
+
+    // If we found a visible section, get its index
+    if (firstVisibleSection) {
+        currentIndex = Array.from(sections).indexOf(firstVisibleSection);
+    }
+    
+    // Update active state
+    steps.forEach((step, index) => {
+        if (index === currentIndex) {
+            step.style.borderBottom = '3px solid #333';
+            step.style.fontWeight = 'bold';
+        } else {
+            step.style.borderBottom = 'none';
+            step.style.fontWeight = 'normal';
+        }
+    });
+}
+
+// Add scroll event listener with debouncing
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        updateActiveStep();
+    }, 100); // Wait 100ms after scrolling stops
+});
+
+// Initial call to set initial state
+document.addEventListener('DOMContentLoaded', () => {
+    updateActiveStep();
+    async function fetchNasGuides() {
+        try {
+            const response = await fetch('https://api.powerpcbuilder.com/guides/nas');
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Error fetching NAS guides:', error);
+            return [];
+        }
+    }
+
+    function createPostCard(item) {
+        // Parse tags from string to array
+        const tags = JSON.parse(item.tags.replace(/\\/g, ''));
+        
+        return `
+            <div class="post-card row">
+                <a href="#" class="img">
+                    <img src="/assets/images${item.url.slice(0, -1)}_200.png" alt="${item.title}">
+                </a>
+                <div class="right-section column">
+                    <h3 class="post-title"><a href="${item.url}">${item.title}</a></h3>
+                    <div class="post-tags">
+                        ${tags.map(tag => `<span>${tag}</span>`).join('')}
+                    </div>
+                    <p>${item.description}</p>
+                </div>
+            </div>
+        `;
+    }
+
+    async function populateContainers() {
+        const guides = await fetchNasGuides();
+        const containers = document.querySelectorAll('.section .container');
+        
+        containers.forEach(container => {
+            const containerId = container.id;
+            if (!containerId) return;
+            
+            // Filter guides by phase (case-insensitive)
+            const relevantGuides = guides.filter(guide => 
+                guide.phase.toLowerCase() === containerId.toLowerCase()
+            );
+            
+            // Find the row div or create one if it doesn't exist
+            let rowDiv = container.querySelector('.row');
+            if (!rowDiv) {
+                rowDiv = document.createElement('div');
+                rowDiv.className = 'row';
+                container.appendChild(rowDiv);
+            }
+            
+            // Clear existing content in the row
+            rowDiv.innerHTML = '';
+            
+            // Add post cards for each relevant guide
+            relevantGuides.forEach(guide => {
+                rowDiv.innerHTML += createPostCard(guide);
+            });
+        });
+    }
+
+    // Initialize when the document is loaded
+    populateContainers();
+});
+</script>

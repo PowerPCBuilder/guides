@@ -1,11 +1,15 @@
 ---
-category: help for installation
+description: Install Plex on your Synology NAS to manage and stream your media library
+  across devices. Set up by installing Plex via Package Center, registering your account,
+  configuring access, creating organized libraries, and connecting devices. Enjoy
+  seamless streaming with metadata, remote access, and personalized media organization
+  for an efficient entertainment experience.
 permalink: /nas/how_to_install_plex_on_your_synology_nas/
+phase: Setup
 tags:
-- Synology NAS
+- Synology
 - Plex installation
 - Media server
-- NAS setup
 - Remote streaming
 - Library management
 title: How to Install Plex on Your Synology NAS?

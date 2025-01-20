@@ -1,9 +1,13 @@
 ---
-category: help for installation
+description: Setting up a Synology NAS involves installing hard drives, connecting
+  to the network, and setting up DSM software. Configure storage, create shared folders,
+  and enable device access for seamless use. Follow step-by-step instructions for
+  troubleshooting issues, ensuring secure and efficient NAS setup for storing and
+  sharing files.
 permalink: /nas/how_to_install_your_synology_nas/
+phase: Setup
 tags:
-- Synology NAS
-- NAS setup
+- Synology
 - DSM installation
 - Storage setup
 - Shared folder

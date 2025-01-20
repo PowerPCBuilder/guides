@@ -30,3 +30,4 @@ node_modules/
 # System files
 .idea/
 .vscode/
+venv/

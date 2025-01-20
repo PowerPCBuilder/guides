@@ -80,7 +80,8 @@ def rename_first_image_in_content(markdown_filename, content, images_folder):
             full_image_path = os.path.join(images_folder, os.path.basename(image_path)).lstrip('/').replace("\\", "/")
             if os.path.exists(full_image_path):
                 image_extension = full_image_path.split(".")[1]
-                new_image_name = os.path.join(images_folder, f"{markdown_filename.split(".")[0]}.{image_extension}").lstrip('/').replace("\\", "/")
+                markdown_filename_no_extension = markdown_filename.split(".")[0]
+                new_image_name = os.path.join(images_folder, f"{markdown_filename_no_extension}.{image_extension}").lstrip('/').replace("\\", "/")
                 if not os.path.exists(new_image_name):
                     os.rename(full_image_path, new_image_name)
                     content = content.replace(image_path, f"/{new_image_name}")

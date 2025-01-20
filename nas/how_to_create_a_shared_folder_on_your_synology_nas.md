@@ -1,10 +1,13 @@
 ---
-category: help for use
+description: Creating a shared folder on your Synology NAS involves four steps; access
+  the user interface, create the folder, select the storage volume, and assign user
+  permissions. Once set up, access the shared folder via Windows or macOS devices
+  on the same network for efficient file organization and sharing.
 permalink: /nas/how_to_create_a_shared_folder_on_your_synology_nas/
+phase: Setup
 tags:
-- Synology NAS
+- Synology
 - Shared folder
-- NAS setup
 - File management
 - User permissions
 title: How to Create a Shared Folder on Your Synology NAS?

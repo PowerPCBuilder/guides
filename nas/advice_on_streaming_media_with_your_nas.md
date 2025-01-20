@@ -1,14 +1,17 @@
 ---
-category: help for use
+description: A NAS enables seamless media streaming across devices, including smartphones,
+  laptops, smart TVs, and consoles. Use apps like Plex for library organization and
+  transcoding, or leverage DLNA and Chromecast for direct playback. Enjoy centralized
+  storage, remote access, and versatile compatibility with minimal effort for an optimized
+  streaming experience.
 permalink: /nas/advice_on_streaming_media_with_your_nas/
+phase: Utilization
 tags:
-- NAS
 - Media streaming
 - Plex
 - DLNA
 - Chromecast
-- Android TV
-- Apple TV
+- TV
 title: Advice on Streaming Media with Your NAS
 ---
 ![](/assets/images/nas/advice_on_streaming_media_with_your_nas.jpeg)

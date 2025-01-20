@@ -1,11 +1,14 @@
 ---
-category: help for use
+description: QuickConnect enables remote access to your Synology NAS for file management,
+  media streaming, or device administration. Set it up by enabling QuickConnect, creating
+  a unique ID, connecting devices using the generated URL, and securing your NAS with
+  firewalls, HTTPS certificates, and automatic blocking for a safe and seamless experience.
 permalink: /nas/how_to_get_external_access_to_your_synology_nas_via_quickconnect/
+phase: Setup
 tags:
-- Synology NAS
+- Synology
 - External access
 - QuickConnect
-- NAS setup
 - Remote access
 - Secure NAS
 title: How to Make Your Synology NAS Externally Accessible?

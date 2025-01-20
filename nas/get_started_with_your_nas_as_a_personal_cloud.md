@@ -1,8 +1,11 @@
 ---
-category: help for use
+description: Using a NAS as a personal cloud offers data control, cost efficiency,
+  and offline access without monthly fees. Sync files across devices, share instantly,
+  and back up automatically. Access NAS files via apps, browsers, or media servers
+  on smartphones, computers, or TVs for a seamless, private storage experience.
 permalink: /nas/get_started_with_your_nas_as_a_personal_cloud/
+phase: Awareness
 tags:
-- NAS
 - Personal cloud
 - File storage
 - Cloud alternative

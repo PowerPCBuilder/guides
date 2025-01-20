@@ -1,8 +1,12 @@
 ---
-category: help for use
+description: "Choosing the right NAS involves assessing your use case, storage needs,\
+  \ hardware specifications, and budget. For personal use, 2\u20134 bays suffice,\
+  \ while businesses need scalable options. Prioritize brands like Synology or QNAP\
+  \ for features like media streaming, security, and cloud integration. Opt for energy-efficient\
+  \ models with future scalability."
 permalink: /nas/choosing_the_right_nas_for_your_needs/
+phase: Evaluation
 tags:
-- NAS
 - Storage capacity
 - RAID
 - Media server

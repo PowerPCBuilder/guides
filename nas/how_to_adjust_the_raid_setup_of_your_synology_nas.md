@@ -1,8 +1,12 @@
 ---
-category: help for troubleshooting
+description: "Adjusting RAID on a Synology NAS enhances storage performance and data\
+  \ protection. You can create a new RAID setup, change an existing one, or restore\
+  \ RAID. Always back up data before making changes, choose the appropriate RAID type\
+  \ for your needs, and follow Synology\u2019s detailed setup steps for optimal results."
 permalink: /nas/how_to_adjust_the_raid_setup_of_your_synology_nas/
+phase: Support
 tags:
-- Synology NAS
+- Synology
 - RAID setup
 - Data protection
 - Storage management

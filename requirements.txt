@@ -1,0 +1,4 @@
+supabase==2.9.1
+pyyaml
+Pillow
+requests

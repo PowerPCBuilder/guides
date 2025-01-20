@@ -1,8 +1,11 @@
 ---
-category: help for use
+description: A NAS is ideal for secure backups of files from PCs, smartphones, and
+  external drives. It offers automation, RAID protection, and no subscription fees.
+  Use built-in tools like Time Machine or mobile NAS apps for seamless backups. Connect
+  via USB or network for efficient file transfers and reliable data storage.
 permalink: /nas/how_to_make_backups_of_your_files_on_a_nas/
+phase: Utilization
 tags:
-- NAS
 - Data backup
 - RAID setup
 - File protection

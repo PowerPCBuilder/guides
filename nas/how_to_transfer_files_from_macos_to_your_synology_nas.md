@@ -1,14 +1,17 @@
 ---
-category: help for use
+description: Easily connect your Synology NAS to a MacBook by; 1) Opening Finder's
+  "Connect to Server" option, 2) Entering your NAS's IP address to save the server,
+  and 3) Logging in with your credentials. Your NAS will appear in Finder for seamless
+  file management, backups, and secure access.
 permalink: /nas/how_to_transfer_files_from_macos_to_your_synology_nas/
+phase: Utilization
 tags:
 - MacOS
-- Synology NAS
+- Synology
 - File transfer
 - Network setup
 - Tech guide
 title: How to Transfer Files from macOS to Your Synology NAS?
-description: Easily connect your Synology NAS to a MacBook by; 1) Opening Finder's "Connect to Server" option, 2) Entering your NAS's IP address to save the server, and 3) Logging in with your credentials. Your NAS will appear in Finder for seamless file management, backups, and secure access.
 ---
 ![alt text](/assets/images/nas/how_to_transfer_files_from_macos_to_your_synology_nas.png)
 # How to Transfer Files from macOS to Your Synology NAS?
