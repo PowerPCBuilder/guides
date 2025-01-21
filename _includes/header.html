@@ -1,24 +1,37 @@
 <div class="navbar">
-    <div class="logo">
-      <a href="https://www.powerpcbuilder.com/">PowerPCBuilder</a>
-    </div>
-    <button class="hamburger" id="hamburger-menu">&#9776;</button>
-    <ul id="navbar-menu">
-      <li><a href="#">CPU</a></li>
+  <div class="logo">
+    <a href="https://www.powerpcbuilder.com/">PowerPCBuilder</a>
+  </div>
+  <span class="hamburger" id="hamburger-menu">&#9776;</span>
+  <ul id="navbar-menu">
+    <!-- <li><a href="#">CPU</a></li>
       <li><a href="#">Motherboard</a></li>
       <li><a href="#">Memory</a></li>
-      <li><a href="#">Storage</a></li>
-      <li><a href="#">Video Card</a></li>
-      <li><a href="https://www.powerpcbuilder.com/nas">NAS</a></li>
-    </ul>
-  </div>
+      <li><a href="#">Storage</a></li> -->
+    <li><a href="#">Video Card</a></li>
+    <li><a href="https://www.powerpcbuilder.com/nas">NAS</a></li>
+  </ul>
+</div>
+{% if page.dir != "/nas/" %}
+<div class="navbar">
+  <div class="sub-menu">
+  <ul>
+    <!-- <li><a href="#">CPU</a></li>
+      <li><a href="#">Motherboard</a></li>
+      <li><a href="#">Memory</a></li>
+      <li><a href="#">Storage</a></li> -->
+    <li><a href="https://guide.powerpcbuilder.com/">Guides</a></li>
+    <li><a href="https://guide.powerpcbuilder.com/nas/">NAS</a></li>
+  </ul></div>
+</div>
+{% endif %}
+<script>
+  // JavaScript to toggle the menu visibility on mobile
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const navbarMenu = document.getElementById('navbar-menu');
 
-  <script>
-    // JavaScript to toggle the menu visibility on mobile
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const navbarMenu = document.getElementById('navbar-menu');
-
-    hamburgerMenu.addEventListener('click', () => {
-      navbarMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
-    });
-  </script>
+  hamburgerMenu.addEventListener('click', () => {
+    const currentDisplay = window.getComputedStyle(navbarMenu).display;
+    navbarMenu.style.display = currentDisplay === 'none' ? 'flex' : 'none';
+  });
+</script>

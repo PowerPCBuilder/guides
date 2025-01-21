@@ -23,7 +23,6 @@ permalink: /nas/
         margin-bottom: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: left;
-        min-height: 200px;
     }
 
     .post-card .left-section {
@@ -82,21 +81,75 @@ permalink: /nas/
     }
 
     .post-card a.img {
-        position: absolute;
-        left: 5px;
+        position: relative;
+        float: left;
         width: 100px;
     }
+    .container {
+       padding: 0;
+    }
+    .post-tags {
+        height: 24px;
+        overflow: hidden;
+    }
+    .post-description {
+        display: none;
+    }
+.progress-bar {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
 
-    .right-section {
-        margin-left: 100px;
+.progress-step {
+    flex: 1;
+    padding: 10px;
+    font-size: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+    writing-mode: vertical-rl; 
+  text-orientation: upright;
+  white-space: nowrap;
+  height: 12px;
+}
+    .progress-step span {
+        font-size: 1.2rem;
+        margin-top: 5px;
+        display: none;
     }
     @media (min-width: 550px) {
-        .post-card a.img  {
-            width: 200px;
+        .post-card a.img {
+            width: 140px;
         }
-        .right-section {
-            margin-left: 200px;
+        .container {
+            padding: 0 20px;
         }
+        .post-description {
+            display: block;
+        }
+        .progress-step {
+            
+    writing-mode:inherit; 
+  text-orientation:inherit;
+  height: 60px;
+        }
+        .progress-step span {
+            display: block;
+        }
+    }
+    .right-section {
+        margin-left: 10px;
     }
     .bg1 {
     background-color: #F8F9FA; /* Light Gray */
@@ -137,36 +190,6 @@ permalink: /nas/
 .bg10 {
     background-color: #E6F0FF; /* Pale Sky Blue */
 }
-.progress-bar {
-    display: flex;
-    width: 100%;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 14px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-.progress-step {
-    flex: 1;
-    padding: 10px;
-    font-size: 2rem;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.progress-step span {
-    display: block;
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
 
 .section.get-help {
     padding-bottom: 0;
@@ -176,7 +199,7 @@ permalink: /nas/
 
 <div class="section get-help">
     <div class="container">
-        <h3 class="section-heading">Your Ultimate NAS Resource Hub</h3>
+        <h1 class="section-heading">Ultimate NAS Resource Hub</h1>
         <p class="section-description">Everything You Need to Know About Network Attached Storage</p>
     </div>
 </div>
@@ -211,7 +234,7 @@ permalink: /nas/
 
 <div class="section bg1">
     <div class="container" id="awareness">
-        <h3 class="section-heading">Awareness</h3>
+        <h2 class="section-heading">Awareness</h2>
         <p class="section-description">
             Gain knowledge about the product, its features, benefits, and how it can address a specific need or problem.
         </p>
@@ -222,7 +245,7 @@ permalink: /nas/
 
 <div class="section bg2">
     <div class="container" id="evaluation">
-        <h3 class="section-heading">Evaluation</h3>
+        <h2 class="section-heading">Evaluation</h2>
         <p class="section-description">
             Decide to purchase the product and focus on choosing the right model or variation that best fits your
             requirements.
@@ -264,7 +287,7 @@ permalink: /nas/
 
 <div class="section bg4">
     <div class="container" id="purchase">
-        <h3 class="section-heading">Purchase</h3>
+        <h2 class="section-heading">Purchase</h2>
         <p class="section-description">
             Complete the purchase process and confirm the order.
         </p>
@@ -275,7 +298,7 @@ permalink: /nas/
 
 <div class="section bg5">
     <div class="container" id="setup">
-        <h3 class="section-heading">Setup and Installation</h3>
+        <h2 class="section-heading">Setup and Installation</h2>
         <p class="section-description">
             Prepare the product for use, including any assembly, installation, or configuration required.
         </p>
@@ -286,7 +309,7 @@ permalink: /nas/
 
 <div class="section bg6">
     <div class="container" id="utilization">
-        <h3 class="section-heading">Utilization</h3>
+        <h2 class="section-heading">Utilization</h2>
         <p class="section-description">
             Start using the product, exploring its functionalities and integrating it into your daily routine.
         </p>
@@ -297,7 +320,7 @@ permalink: /nas/
 
 <div class="section bg7">
     <div class="container" id="support">
-        <h3 class="section-heading">Support and Maintenance</h3>
+        <h2 class="section-heading">Support and Maintenance</h2>
         <p class="section-description">
             Address any issues, perform troubleshooting, and carry out necessary maintenance to keep the product in
             optimal condition.
@@ -387,12 +410,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="#" class="img">
                     <img src="/assets/images${item.url.slice(0, -1)}_200.png" alt="${item.title}">
                 </a>
-                <div class="right-section column">
+                <div class="right-section">
                     <h3 class="post-title"><a href="${item.url}">${item.title}</a></h3>
                     <div class="post-tags">
                         ${tags.map(tag => `<span>${tag}</span>`).join('')}
                     </div>
-                    <p>${item.description}</p>
+                    <div class="post-description">${item.description}</div>
                 </div>
             </div>
         `;
