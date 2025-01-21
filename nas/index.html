@@ -46,7 +46,6 @@ permalink: /nas/
         width: 200px;
         height: auto;
     }
-
     .post-card .right-section {
         flex: 1;
     }
@@ -90,6 +89,14 @@ permalink: /nas/
 
     .right-section {
         margin-left: 200px;
+    }
+    @media (min-width: 400px) {
+        .post-card a.img  {
+            width: 100px;
+        }
+        .right-section {
+            margin-left: 100px;
+        }
     }
     .bg1 {
     background-color: #F8F9FA; /* Light Gray */
@@ -184,10 +191,6 @@ permalink: /nas/
         Evaluation
         <span>Decide to purchase the product</span>
     </div>
-    <div class="progress-step bg3">
-        Shopping Decision
-        <span>Identify where to buy the product</span>
-    </div>
     <div class="progress-step bg4">
         Purchase
         <span>Complete the purchase process</span>
@@ -225,18 +228,36 @@ permalink: /nas/
             requirements.
         </p>
         <div class="row">
-        </div>
-    </div>
-</div>
-
-<div class="section bg3">
-    <div class="container" id="decision">
-        <h3 class="section-heading">Shopping Decision</h3>
-        <p class="section-description">
-            Identify where to buy the product, considering factors like price, availability, reviews, and seller
-            reputation.
-        </p>
-        <div class="row">
+            <div class="container">
+                
+                <h4>📦 Popular NAS Brands</h4>
+                <div class="row">
+                    <div class="two columns brandLogo">
+                      <img class="u-max-full-width" src="/assets/images/brands/synology.png">
+                      <p>User-friendly OS, versatile apps.</p>
+                    </div>
+                    <div class="two columns brandLogo">
+                      <img class="u-max-full-width" src="/assets/images/brands/QNAP.png">
+                      <p>Advanced features and performance.</p>
+                    </div>
+                    <div class="two columns brandLogo">
+                      <img class="u-max-full-width" src="/assets/images/brands/ugreen.png"> 
+                      <p>Compact and innovative solutions.</p>
+                    </div>
+                    <div class="two columns brandLogo">
+                      <img class="u-max-full-width" src="/assets/images/brands/Asustor.png">
+                      <p>Affordable and competitive.</p>
+                    </div>
+                    <div class="two columns brandLogo">
+                      <img class="u-max-full-width" src="/assets/images/brands/TerraMaster.png">
+                      <p>Budget-friendly options.</p>
+                    </div>
+                    <div class="two columns brandLogo">
+                      <img class="u-max-full-width" src="/assets/images/brands/wd.png">
+                      <p>Reliable and easy to set up.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -397,9 +418,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 rowDiv.className = 'row';
                 container.appendChild(rowDiv);
             }
-            
-            // Clear existing content in the row
-            rowDiv.innerHTML = '';
             
             // Add post cards for each relevant guide
             relevantGuides.forEach(guide => {
